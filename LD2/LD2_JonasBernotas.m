@@ -50,11 +50,11 @@ min(sf) %[output:505dae8b]
 clear
 close all
 
-A = input('iveskite 12 elementu vektoriu A: ')
-B = [A(10:end), A(1:9)]
+A = input('iveskite 12 elementu vektoriu A: ') %[output:2a961deb]
+B = [A(10:end), A(1:9)] %[output:311b68fe]
 
-disp('vektorius B yra:')
-disp(B)
+disp('vektorius B yra:') %[output:271e73cf]
+disp(B) %[output:8988ce77]
 
 %[appendix]{"version":"1.0"}
 %---
@@ -108,4 +108,16 @@ disp(B)
 %---
 %[output:505dae8b]
 %   data: {"dataType":"textualVariable","outputData":{"name":"ans","value":"4.0110"}}
+%---
+%[output:2a961deb]
+%   data: {"dataType":"matrix","outputData":{"columns":12,"name":"A","rows":1,"type":"double","value":[["1","2","3","4","5","6","7","8","9","10","11","12"]]}}
+%---
+%[output:311b68fe]
+%   data: {"dataType":"matrix","outputData":{"columns":12,"name":"B","rows":1,"type":"double","value":[["10","11","12","1","2","3","4","5","6","7","8","9"]]}}
+%---
+%[output:271e73cf]
+%   data: {"dataType":"text","outputData":{"text":"vektorius B yra:\n","truncated":false}}
+%---
+%[output:8988ce77]
+%   data: {"dataType":"text","outputData":{"text":"    10    11    12     1     2     3     4     5     6     7     8     9\n\n","truncated":false}}
 %---
