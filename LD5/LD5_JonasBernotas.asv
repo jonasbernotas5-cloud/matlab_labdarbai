@@ -1,0 +1,94 @@
+clear
+ca = { 1, [1 2 3 4], false, 'text'} %[output:55c7a8f9]
+
+cellfun(@(x) isnumeric(x) && isreal(x), ca) %[output:08774db6]
+%%
+clear
+
+while true %[output:group:51af6073]
+    a = input('Iveskite a: ') %[output:5c78bc4b] %[output:7b1be35c]
+    b = input('Iveskite b: ') %[output:23f4d127] %[output:13e2a500]
+    c = input('Iveskite c: ') %[output:3e6952b3] %[output:84e1c6c5]
+    x = input('Iveskite x: ') %[output:3555f630] %[output:5d1c18fe]
+
+    if a == 2 && b == 2 && c == 1 && x == 1
+        disp('Ivestos baigiamojo ciklo reiksmes. Programa baigia darba.'); %[output:7a232c6d]
+        break;
+    end
+    
+    f = a*x^2 + b*x + c;
+    disp('atsakymas: ') %[output:56871b86]
+    disp(f) %[output:5dfe45a5]
+end %[output:group:51af6073]
+%%
+clear
+
+x = input('iveskite x reiksme: ') %[output:0434a64b]
+y = input('iveskite y reiksme: ') %[output:51100326]
+
+for i = 1:20 %[output:group:46f201fa]
+    m = randi([1 x]);
+    n = randi([1 y]);
+
+    A = zeros(x, y);
+    A(m, n) = NaN;
+    disp(A) %[output:147ae7c6]
+
+    pause(0.5);
+    clc;
+end %[output:group:46f201fa]
+
+
+%[appendix]{"version":"1.0"}
+%---
+%[metadata:view]
+%   data: {"layout":"onright"}
+%---
+%[output:55c7a8f9]
+%   data: {"dataType":"tabular","outputData":{"columns":4,"header":"1×4 cell array","name":"ca","rows":1,"type":"cell","value":[["1","[1,2,3,4]","0","'text'"]]}}
+%---
+%[output:08774db6]
+%   data: {"dataType":"matrix","outputData":{"columns":4,"header":"1×4 logical array","name":"ans","rows":1,"type":"logical","value":[["1","1","0","0"]]}}
+%---
+%[output:5c78bc4b]
+%   data: {"dataType":"textualVariable","outputData":{"name":"a","value":"9"}}
+%---
+%[output:23f4d127]
+%   data: {"dataType":"textualVariable","outputData":{"name":"b","value":"5"}}
+%---
+%[output:3e6952b3]
+%   data: {"dataType":"textualVariable","outputData":{"name":"c","value":"8"}}
+%---
+%[output:3555f630]
+%   data: {"dataType":"textualVariable","outputData":{"name":"x","value":"5"}}
+%---
+%[output:56871b86]
+%   data: {"dataType":"text","outputData":{"text":"atsakymas: \n","truncated":false}}
+%---
+%[output:5dfe45a5]
+%   data: {"dataType":"text","outputData":{"text":"   258\n\n","truncated":false}}
+%---
+%[output:7b1be35c]
+%   data: {"dataType":"textualVariable","outputData":{"name":"a","value":"2"}}
+%---
+%[output:13e2a500]
+%   data: {"dataType":"textualVariable","outputData":{"name":"b","value":"2"}}
+%---
+%[output:84e1c6c5]
+%   data: {"dataType":"textualVariable","outputData":{"name":"c","value":"1"}}
+%---
+%[output:5d1c18fe]
+%   data: {"dataType":"textualVariable","outputData":{"name":"x","value":"1"}}
+%---
+%[output:7a232c6d]
+%   data: {"dataType":"text","outputData":{"text":"Ivestos baigiamojo ciklo reiksmes. Programa baigia darba.\n","truncated":false}}
+%---
+%[output:0434a64b]
+%   data: {"dataType":"textualVariable","outputData":{"name":"x","value":"5"}}
+%---
+%[output:51100326]
+%   data: {"dataType":"textualVariable","outputData":{"name":"y","value":"5"}}
+%---
+%[output:147ae7c6]
+%   data: {"dataType":"text","outputData":{"text":"     0     0     0     0     0\n     0     0     0     0     0\n     0     0   NaN     0     0\n     0     0     0     0     0\n     0     0     0     0     0\n\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0     0   NaN     0\n\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0     0     0   NaN\n     0     0     0     0     0\n\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0   NaN     0     0\n\n     0   NaN     0     0     0\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0     0     0     0\n\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0     0     0     0\n   NaN     0     0     0     0\n\n     0     0     0     0     0\n     0     0     0     0     0\n   NaN     0     0     0     0\n     0     0     0     0     0\n     0     0     0     0     0\n\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0     0   NaN     0\n\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0   NaN     0     0\n     0     0     0     0     0\n     0     0     0     0     0\n\n     0     0     0   NaN     0\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0     0     0     0\n\n   NaN     0     0     0     0\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0     0     0     0\n\n     0     0     0     0     0\n     0     0     0     0     0\n   NaN     0     0     0     0\n     0     0     0     0     0\n     0     0     0     0     0\n\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0     0     0   NaN\n\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0     0     0     0\n   NaN     0     0     0     0\n     0     0     0     0     0\n\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0   NaN     0     0\n     0     0     0     0     0\n\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0     0   NaN     0\n\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0   NaN     0     0\n\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0     0     0   NaN\n     0     0     0     0     0\n     0     0     0     0     0\n\n   NaN     0     0     0     0\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0     0     0     0\n\n     0   NaN     0     0     0\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0     0     0     0\n     0     0     0     0     0\n\n","truncated":false}}
+%---
